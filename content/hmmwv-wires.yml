@@ -1,0 +1,283 @@
+connectors:
+
+  X1:
+    notes: "Main Connector to the Dash box"
+    pinlabels: ['17', '18', '19', '20', '21', '23', '24', '460', '22-460', '461', '22-461', '90']
+    additional_components:
+      - type: crimp
+        subtype: splice
+        qty: 2
+  X-MKR: &marker
+    notes: "Marker Light Connector"
+    pinlabels: ['21', '90']
+    additional_components:
+      - type: crimp
+        subtype: Male Packard
+      - type: crimp
+        subtype: Female Packard
+# Connectors to the Front of the Vehicle
+  XF1:
+    notes: "Front Branch pass through connections"
+    pinlabels: ['17', '18', '19', '20', '21', '460', '461', '90']
+    additional_components:
+      - type: crimp
+        subtype: splice
+        qty: 5
+  XF2:
+    notes: "Front Driver Branch pass through connections"
+    pinlabels: ['17', '18', '19', '20', '21', '461', '90']
+    additional_components:
+      - type: crimp
+        subtype: splice
+        qty: 4
+  XF3:
+    notes: "Front Passenger Branch pass through connections"
+    pinlabels: ['17', '18', '20', '21', '460', '90']
+    additional_components:
+      - type: crimp
+        subtype: splice
+        qty: 2
+  XF4:
+    notes: "Front Driver head light connector"
+    pinlabels: ['17', '18', '19', '20', '21', '461', '90']
+    additional_components:
+      - type: crimp
+        subtype: Male Packard
+        qty: 6
+      - type: crimp
+        subtype: Female Packard
+        qty: 1
+  XF5:
+    notes: "Front Passenger head light connector"
+    pinlabels: ['17', '18', '20', '21', '460', '90']
+    additional_components:
+      - type: crimp
+        subtype: Male Packard
+        qty: 5
+      - type: crimp
+        subtype: Female Packard
+        qty: 1
+  XF6:
+    <<: *marker
+    notes: "Front Driver marker light connector"
+  XF7:
+    <<: *marker
+    notes: "Front Passenger marker light connector"
+  XF8:
+    notes: "Front Blackout Drive Light connector"
+    pinlabels: ['19', '90']
+    additional_components:
+      - type: crimp
+        subtype: Male Packard
+      - type: crimp
+        subtype: Female Packard
+# Connectors to the Rear of the Vehicle
+  XR1:
+    notes: "Rear Branch pass through connections"
+    pinlabels: ['21', '22-460', '22-461', '23', '24', '90']
+    additional_components:
+      - type: crimp
+        subtype: splice
+        qty: 10
+  XR2:
+    notes: "Rear Driver Branch pass through connections"
+    pinlabels: ['21', '22-461', '23', '24', '90']
+    additional_components:
+      - type: crimp
+        subtype: splice
+        qty: 2
+  XR3:
+    notes: "Rear Passenger Branch pass through connections"
+    pinlabels: ['21', '22-460', '23', '24', '90']
+    additional_components:
+      - type: crimp
+        subtype: splice
+        qty: 2
+  XR4:
+    notes: "Rear Driver tail light connector"
+    pinlabels: ['21', '22-461', '23', '24', '90']
+    additional_components:
+      - type: crimp
+        subtype: Male Packard
+        qty: 4
+      - type: crimp
+        subtype: Female Packard
+        qty: 1
+  XR5:
+    notes: "Rear Passenger tail light connector"
+    pinlabels: ['21', '22-460', '23', '24', '90']
+    additional_components:
+      - type: crimp
+        subtype: Male Packard
+        qty: 4
+      - type: crimp
+        subtype: Female Packard
+        qty: 1
+  XR6:
+    <<: *marker
+    notes: "Rear Driver marker light connector"
+  XR7:
+    <<: *marker
+    notes: "Rear Passenger marker light connector"
+  XR8:
+    notes: "Trailer Connector"
+    pinlabels: ['24A', '22-461', '24B', '90A', '21', '23', '24C', '22-460', 'NA-A', '90B', 'NA-B', 'NA-C']
+    mpn: MS75021-1
+cables:
+  W1:
+    category: bundle
+    gauge: 14 AWG
+    length: 10 ft
+    wirecount: 8
+  W2:
+    category: bundle
+    gauge: 14 AWG
+    length: 10 ft
+    wirecount: 6
+# Cables to the Front of the Vehicle
+  WF1:
+    category: bundle
+    gauge: 14 AWG
+    length: 3 ft
+    wirecount: 7
+  WF2:
+    category: bundle
+    gauge: 14 AWG
+    length: 3 ft
+    wirecount: 6
+  WF3:
+    category: bundle
+    gauge: 14 AWG
+    length: 1 ft
+    wirecount: 7
+  WF4:
+    category: bundle
+    gauge: 14 AWG
+    length: 2 ft
+    wirecount: 2
+  WF5:
+    category: bundle
+    gauge: 14 AWG
+    length: 1 ft
+    wirecount: 2
+  WF6:
+    category: bundle
+    gauge: 14 AWG
+    length: 1 ft
+    wirecount: 6
+  WF7:
+    category: bundle
+    gauge: 14 AWG
+    length: 2 ft
+    wirecount: 2
+# Cables for the Rear of the Vehicle
+# Rear Driver Branch Cable
+  WR1:
+    category: bundle
+    gauge: 14 AWG
+    length: 3 ft
+    wirecount: 5
+# Rear Passenger Branch Cable
+  WR2:
+    category: bundle
+    gauge: 14 AWG
+    length: 3 ft
+    wirecount: 5
+# Trailer Branch Cable
+  WR3:
+    category: bundle
+    gauge: 14 AWG
+    length: 2 ft
+    wirecount: 9
+    wirelabels: ['24A', '22-461', '24B', '90A', '21', '23', '24C', '22-460', '90B']
+# Rear Driver Tail Light
+  WR4:
+    category: bundle
+    gauge: 14 AWG
+    length: 1 ft
+    wirecount: 5
+# Rear Driver Marker Light
+  WR5:
+    category: bundle
+    gauge: 14 AWG
+    length: 1 ft
+    wirecount: 2
+# Rear Passenger Tail Light
+  WR6:
+    category: bundle
+    gauge: 14 AWG
+    length: 1 ft
+    wirecount: 5
+# Rear Passenger Marker Light
+  WR7:
+    category: bundle
+    gauge: 14 AWG
+    length: 1 ft
+    wirecount: 2
+connections:
+  -
+    - X1: [1, 2, 3, 4, 5, 8, 10, 12]
+    - W1: [1-8]
+    - XF1: [1-8]
+  -
+    - X1: [5, 9, 11, 6, 7, 12]
+    - W2: [1-6]
+    - XR1: [1-6]
+# Connections to the Front of the Vehicle
+  -
+    - XF1: [1, 2, 3, 4, 5, 7, 8]
+    - WF1: [1-7]
+    - XF2: [1-7] # Driver Branch
+  -
+    - XF1: [1, 2, 4, 5, 6, 8] # Main Branch
+    - WF2: [1-6]
+    - XF3: [1-6] # Passenger Branch
+  -
+    - XF2: [1-7] # Driver Branch
+    - WF3: [1-7]
+    - XF4: [1-7] # Driver head light
+  -
+    - XF2: [5, 7] # Driver Branch
+    - WF4: [1, 2]
+    - XF6: [1, 2] # Driver marker light
+  -
+    - XF2: [3, 7] # Driver Branch
+    - WF5: [1, 2]
+    - XF8: [1, 2] # Driver Blackout Drive Light
+  -
+    - XF3: [1-6] # Passenger Branch
+    - WF6: [1-6]
+    - XF5: [1-6] # Passenger head light
+  -
+    - XF3: [4, 6] # Passenger Branch
+    - WF7: [1, 2]
+    - XF7: [1, 2] # Passenger Marker Light
+# Connections to the Rear of the Vehicle
+  -
+    - XR1: [1, 3, 4, 5, 6] # Main Branch
+    - WR1: [1-5]
+    - XR2: [1-5] # Driver Branch
+  -
+    - XR1: [1, 2, 4, 5, 6] # Main Branch
+    - WR2: [1-5]
+    - XR3: [1-5] # Passenger Branch
+  -
+    - XR1: [5, 3, 5, 6, 1, 4, 5, 2, 6] # Main Branch
+    - WR3: [1-9]
+    - XR8: [1, 2, 3, 4, 5, 6, 7, 8, 10] # Trailer Branch
+  -
+    - XR2: [1-5] # Driver Branch
+    - WR4: [1-5]
+    - XR4: [1-5]  # Driver Tail Light
+  -
+    - XR2: [1, 5] # Driver Branch
+    - WR5: [1, 2]
+    - XR6: [1, 2] # Driver Marker Light
+  -
+    - XR3: [1-5] # Passenger Branch
+    - WR6: [1-5]
+    - XR5: [1-5] # Passenger Tail Light
+  -   
+    - XR3: [1, 5] # Passenger Branch
+    - WR7: [1, 2]
+    - XR7: [1, 2] # Passenger Marker Light
